@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87cefa, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.searchBar {
+  width: 80%;
+  max-width: 600px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #0070f3;
+  border-radius: 2rem;
+  outline: none;
+  transition: border-color 0.3s;
+  color: #333;
+}
+
+.searchBar:focus {
+  border-color: #005bb5;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.result {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.result h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #0070f3;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100%;
+}
+
+.city {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: bold;
+  color: #0070f3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+
+.iconColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.iconSmall {
+  width: 60px;
+  height: 60px;
+}
+
+.dateText {
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.label {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  opacity: 0.9;
+  margin-bottom: 0.4rem;
+}
+
+.value {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: bold;
+}
+
+.valueSmall {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  font-weight: bold;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.temp {
+  background-color: #ff7e5f;
+}
+
+.condition {
+  background-color: #6c63ff;
+}
+
+.humidity {
+  background-color: #4ecdc4;
+}
+
+.wind {
+  background-color: #00bfff;
+}
